@@ -9,6 +9,9 @@ pipeline {
                     reuseNode true
                 }
             }
+            environment {
+                PATH = "/usr/local/bin/docker"
+            }
             steps {
                 sh '''
                     ls -la
